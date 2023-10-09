@@ -19,8 +19,8 @@ body {
     left: 40%;
 }
 
-/* RESULT SCREEN */
-.container > #result {
+/* SCREEN SCREEN */
+.container > #screen {
     width: 260px;
     height: 100px;
     position: relative;
@@ -28,6 +28,16 @@ body {
     left: 20px;
     border-radius: 10px;
     background-color: #98d8ce;
+}
+
+/* RESULT */
+.container > #screen > #result {
+    font-size: 20px;
+    color: #000;
+    font-weight: lighter;
+    position: relative;
+    left: 240px;
+    top: 60px;
 }
 
 /* */
