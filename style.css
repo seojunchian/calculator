@@ -2,29 +2,64 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #c3dad4;
+}
+
+/* CALCULATOR */
 .container {
     width: 300px;
     height: 450px;
+    background-color: #65a897;
+    border-radius: 10px;
     position: relative;
     top: 100px;
     left: 40%;
+}
+
+/* RESULT SCREEN */
+.container > #result {
+    width: 260px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    background-color: #98d8ce;
     border: 1px black solid;
 }
-.container > #result {
-    width: 200px;
-    background-color: #646a3c;
+
+/* */
+.container > .buttons {
+    margin: 50px auto;
 }
-.container > .buttons> .line1 > button,
-.container > .buttons> .line2 > button,
-.container > .buttons> .line3 > button,
-.container > .buttons> .line4 > button {
+
+/* BUTTONS LINING UP */
+.container > .buttons > .line1,
+.container > .buttons > .line2,
+.container > .buttons > .line3,
+.container > .buttons > .line4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+.container > .buttons > .line1 > button,
+.container > .buttons > .line2 > button,
+.container > .buttons > .line3 > button,
+.container > .buttons > .line4 > button {
     width: 50px;
     height: 50px;
     margin: 10px;
+    background-color: #c3dad4;
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
+
+/* ZERO */
 .container > .buttons> .line4 > #zero {
     width: 198px;
 }
